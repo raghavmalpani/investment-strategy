@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp call:*)",
+      "Bash(claude mcp get:*)",
+      "mcp__financial-datasets__getStockPriceSnapshot",
+      "mcp__financial-datasets__getCompanyFacts",
+      "mcp__financial-datasets__getFinancialMetricsSnapshot",
+      "mcp__financial-datasets__getIncomeStatement",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(cat:*)",
+      "mcp__financial-datasets__getNews"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
