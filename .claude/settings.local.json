@@ -10,7 +10,9 @@
       "Bash(mkdir:*)",
       "Bash(touch:*)",
       "Bash(cat:*)",
-      "mcp__financial-datasets__getNews"
+      "mcp__financial-datasets__getNews",
+      "mcp__financial-datasets__getBalanceSheet",
+      "mcp__financial-datasets__getCashFlowStatement"
     ],
     "deny": [],
     "ask": []
