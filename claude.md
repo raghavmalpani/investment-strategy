@@ -3,6 +3,8 @@
 ## Project Overview
 This project implements a systematic AI-focused equity investment strategy with scoring frameworks for multiple market segments. The strategy is documented in `AI_AI_stock_strategy.md` with scoring methodology in `AI_scoring_sheet.md`.
 
+**Risk Profile:** This is a **high-growth, high-risk sleeve** positioned for AI thesis upside. We tolerate >30% drawdowns in exchange for asymmetric upside if generative AI adoption accelerates. Scoring emphasizes future AI potential over current financial perfection.
+
 ## Directory Structure
 
 ```
@@ -11,23 +13,24 @@ investment_strategy/
 ├── AI_AI_stock_strategy.md           # Overall investment thesis & framework
 ├── AI_scoring_sheet.md               # High-level scoring methodology (1-5 scale)
 ├── AI_watchlist_seeds.md             # Initial ticker seeds (if exists)
-└── scoring/                          # Segment-specific scoring directories
-    ├── compute_stack/
-    ├── critical_enablers/
-    ├── endpoint_gatekeepers/
-    ├── productivity_devops/
-    ├── commerce_ads/
-    ├── industrial_logistics/
-    ├── healthcare_regulated/
-    └── consumer_social_media/
+├── platform/                          # AI infrastructure & enablers
+│   ├── compute_stack/                # Chips, foundries, cloud compute
+│   └── critical_enablers.md          # Networking, memory, power, packaging
+└── product/                           # AI product & distribution layers
+    ├── endpoint_gatekeepers.md       # Device OS, automotive, industrial platforms
+    ├── productivity_devops.md        # Office, dev tools, enterprise SaaS
+    ├── commerce_ads.md               # E-commerce, advertising platforms
+    ├── industrial_logistics.md       # Automation, warehouse, supply chain
+    ├── healthcare_regulated.md       # Medical AI, diagnostics, compliance
+    └── consumer_social_media.md      # Social, media, personalization
 ```
 
 ## Segment Directory Template
 
-Each segment follows this structure:
+Developed segments (like `compute_stack/`) follow this structure:
 
 ```
-scoring/{segment_name}/
+platform/{segment_name}/
 ├── claude.md                      # Segment-specific instructions
 ├── scoring_guide.md               # Dimension definitions, weights, trigger flags
 ├── currently_invested_stocks.md   # Portfolio allocation tracker
@@ -59,9 +62,15 @@ scoring/{segment_name}/
 ### Segment-Level Files
 
 **`scoring_guide.md`**
-- Scoring dimensions with weights (should sum to ~6.0)
-- Sample indicators for each dimension
-- Trigger flag definitions (hard/soft)
+- Scoring dimensions with weights (total: 7.5)
+  - AI Revenue Growth & Monetization: 2.0x
+  - Competitive Positioning: 2.0x
+  - Strategic Moats: 1.5x
+  - Execution & Regulatory Risk: 1.0x
+  - Capital Efficiency: 0.5x (quality filter, not primary driver)
+  - Valuation as Thesis Discount: 0.5x (upside if AI thesis plays out, NOT traditional value)
+- Sample indicators and scoring guides for each dimension
+- Trigger flag definitions
 - Watchlist table with scores
 - **Updates:** Add latest scores to watchlist table after each review
 
@@ -96,11 +105,15 @@ scoring/{segment_name}/
 ```
 1. Read perplexity_notes/ for latest research
 2. Pull financial data via MCP tools (getStockPriceSnapshot, getCompanyFacts, etc.)
-3. Reference scoring_guide.md for dimension definitions
-4. Score each dimension (1-5), multiply by weight, sum and normalize
-5. Document in stock_notes/{TICKER}.md with timestamp
-6. Update watchlist table in scoring_guide.md with latest scores
-7. Flag any triggers
+3. Reference scoring_guide.md for dimension definitions and scoring guides
+4. Score each dimension (1-5) with growth/AI thesis lens:
+   - Prioritize: AI revenue growth, competitive position, moats
+   - De-prioritize: Current profitability (unless burn threatens survival)
+   - Reframe valuation: "How much upside remains?" not "Is this cheap?"
+5. Multiply scores by weights, sum and normalize by 7.5
+6. Document in stock_notes/{TICKER}.md with timestamp
+7. Update watchlist table in scoring_guide.md with latest scores
+8. Flag any triggers
 ```
 
 ### 3. Stock Notes Format
@@ -157,13 +170,21 @@ scoring/{segment_name}/
   - **Note:** Perplexity notes provide deeper context; use news tool between research cycles, not as replacement
 
 ## Capital Deployment Framework
-- **Baseline anchor (35-40%):** Compute stack bellwethers
+**Portfolio Type:** High-growth AI sleeve (distinct from core ETF holdings)
+
+- **Baseline anchor (35-40%):** Compute stack bellwethers (chips, foundry, tools)
 - **Opportunity sleeve (60-65%):**
-  - 30-35% vertical AI leaders
-  - 15-20% endpoint gatekeepers
-  - 10% dry powder
-- **Position sizing:** Cap at 8-10% unless score ≥4.5 with no triggers
-- **Rebalance:** Monthly trigger checks, full rescore post-earnings
+  - 30-35% vertical AI leaders with clear monetization
+  - 15-20% endpoint gatekeepers/distribution plays
+  - 10% dry powder for event-driven additions
+- **Position sizing:**
+  - Cap at 8-10% unless score ≥4.5 with no hard triggers
+  - Pyramid into winners as KPIs beat thresholds (AI revenue >30% YoY, utilization >85%)
+  - Accept concentration in top convictions (this is a growth sleeve, not index)
+- **Rebalance cadence:**
+  - Monthly trigger checks
+  - Full rescore post-earnings
+  - Harvest when position exceeds 1.5× target weight OR score momentum negative for 2 consecutive reviews
 
 ## Review Cadence
 - **Full rescore:** Quarterly (post-earnings)

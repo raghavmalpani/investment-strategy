@@ -15,16 +15,20 @@
 | 5 | Best-in-class, clear line-of-sight to compounding returns |
 
 ## Segment Scorecards
-- `scoring/compute_stack.md`
-- `scoring/critical_enablers.md`
-- `scoring/endpoint_gatekeepers.md`
-- `scoring/productivity_devops.md`
-- `scoring/commerce_ads.md`
-- `scoring/industrial_logistics.md`
-- `scoring/healthcare_regulated.md`
-- `scoring/consumer_social_media.md`
+
+### Platform (Infrastructure & Enablers)
+- `platform/compute_stack/scoring_guide.md` - Chips, foundries, cloud compute
+- `platform/critical_enablers.md` - Networking, memory, power, packaging
+
+### Product (AI Distribution & Applications)
+- `product/endpoint_gatekeepers.md` - Device OS, automotive, industrial platforms
+- `product/productivity_devops.md` - Office, dev tools, enterprise SaaS
+- `product/commerce_ads.md` - E-commerce, advertising platforms
+- `product/industrial_logistics.md` - Automation, warehouse, supply chain
+- `product/healthcare_regulated.md` - Medical AI, diagnostics, compliance
+- `product/consumer_social_media.md` - Social, media, personalization
 
 ## Implementation Notes
-- Adjust weights by ±0.5 to reflect unique company attributes, but keep total weight near 6.0 per segment for comparability.
-- Maintain a watchlist where trigger flags are logged with dates and follow-up actions; unresolved flags cap position size at <50% of target weight.
-- Recalculate scores quarterly post-earnings and mid-cycle when major AI product launches or regulatory events occur.
+- **Weight adjustment:** Total weights are 7.5 for growth-focused framework (not 6.0). Adjust by ±0.5 to reflect unique company attributes while maintaining comparability.
+- **Trigger flags:** Unresolved hard triggers cap position size at 50% of target weight; soft triggers require monitoring but no automatic cap.
+- **Rebalance cadence:** Quarterly post-earnings rescore; monthly trigger flag checks; event-driven rescores for major AI launches or regulatory changes.

@@ -52,7 +52,7 @@
   - Sources: earnings materials, customer case studies, alternative data providers, regulatory databases, industry-specific research firms.
 
 ## Capital Deployment Framework (High-Risk Sleeve)
-- **Risk budget**: Treat the $120k as a growth sleeve distinct from core ETF holdings; tolerate >30% drawdowns by sizing positions to thesis confidence rather than volatility minimization.
+- **Risk budget**: Treat this portfolio as a growth sleeve distinct from core ETF holdings; tolerate >30% drawdowns by sizing positions to thesis confidence rather than volatility minimization.
 - **Baseline anchor (~35–40%)**: Maintain exposure to compute stack bellwethers and select critical enablers to keep the portfolio tethered to AI demand even if product bets take longer to play out.
 - **Opportunity sleeve (~60–65%)**:
   - Allocate 30–35% to vertical AI leaders with clear monetization catalysts; concentrate in 4–6 names scoring ≥4 on AI revenue contribution and product velocity.
