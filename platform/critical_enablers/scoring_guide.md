@@ -126,7 +126,7 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 ### Networking
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| AVGO | Broadcom | Networking ASICs, custom accelerators | 3.27/5 (4.27 - 1.0 personal bias) | Customer concentration >50%, Extreme valuation (P/E 81x) |
+| AVGO | Broadcom | Networking ASICs, custom accelerators | 4.27/5 | Customer concentration >50%, Extreme valuation (P/E 81x) |
 | ANET | Arista Networks | 400G/800G AI cluster switching | 4.07/5 | Customer concentration >20% (Meta/MSFT) |
 | NVDA | NVIDIA | Mellanox InfiniBand, ConnectX DPUs (see compute_stack) | See compute_stack | See compute_stack |
 

@@ -12,7 +12,12 @@
       "Bash(cat:*)",
       "mcp__financial-datasets__getNews",
       "mcp__financial-datasets__getBalanceSheet",
-      "mcp__financial-datasets__getCashFlowStatement"
+      "mcp__financial-datasets__getCashFlowStatement",
+      "Bash(python scripts/extract_latest_scores.py:*)",
+      "Bash(python3:*)",
+      "mcp__financial-datasets__getStockPrices",
+      "mcp__financial-datasets__getFilings",
+      "mcp__financial-datasets__getFilingItems"
     ],
     "deny": [],
     "ask": []

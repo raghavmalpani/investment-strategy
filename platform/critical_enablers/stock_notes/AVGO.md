@@ -12,7 +12,6 @@
 - Capital Efficiency: 4/5 (Weight: 0.5) = 2.0
 - Valuation as Thesis Discount: 1/5 (Weight: 0.5) = 0.5
 **Total: 4.27 / 5**
-**Adjusted: 3.27 / 5 (personal bias -1.0)**
 
 ### Key Points
 - **AI Revenue:** Q3 2025 AI revenue $5.2B (+63% YoY), Q4 guidance $6.2B; >$10B backlog in custom XPUs and switch silicon

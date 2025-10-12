@@ -1,2 +1,15 @@
 # Perplexity research notes (proprietary/AI-generated content)
 **/perplexity_notes/
+
+# Position sizing output (contains personal capital info)
+platform/month1_positions.md
+platform/leaps_selections.md
+
+# Trading restrictions (personal info)
+platform/trading_restrictions.json
+
+# Actual position data and transaction history
+platform/actual_positions.md
+platform/transaction_history.csv
+**/actual_*.md
+**/transactions_*.csv

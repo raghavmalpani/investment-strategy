@@ -53,11 +53,18 @@
 
 ## Capital Deployment Framework (High-Risk Sleeve)
 - **Risk budget**: Treat this portfolio as a growth sleeve distinct from core ETF holdings; tolerate >30% drawdowns by sizing positions to thesis confidence rather than volatility minimization.
-- **Baseline anchor (~35–40%)**: Maintain exposure to compute stack bellwethers and select critical enablers to keep the portfolio tethered to AI demand even if product bets take longer to play out.
-- **Opportunity sleeve (~60–65%)**:
-  - Allocate 30–35% to vertical AI leaders with clear monetization catalysts; concentrate in 4–6 names scoring ≥4 on AI revenue contribution and product velocity.
-  - Allocate 15–20% to endpoint gatekeepers or emerging distribution plays poised to re-price as agent experiences scale; re-evaluate if regulatory trigger flags emerge.
-  - Reserve 10% as dry powder for event-driven additions (e.g., model partnerships, inflection-point earnings) surfaced by the scoring sheet.
+- **Portfolio allocation**: 40% platform (compute stack + critical enablers), 60% product (endpoint gatekeepers + vertical AI leaders).
+- **Platform sleeve (40%)**:
+  - 25–30% compute stack bellwethers (chips, foundry, cloud compute)
+  - 10–15% critical enablers (networking, memory, power, packaging)
+  - Maintain this anchor to keep portfolio tethered to AI infrastructure demand even if product bets take longer to play out.
+- **Product sleeve (60% - TBD)**:
+  - Breakdown pending additional research on product stocks (endpoint gatekeepers, vertical AI leaders, dry powder allocation).
+  - Will determine specific allocations after scoring product segment candidates.
+- **Options/LEAPS allocation**: 5–10% of total portfolio, never exceeding 10%. Use for:
+  - High-conviction thesis plays with defined catalysts (earnings, product launches, regulatory approvals)
+  - Asymmetric upside on smaller positions without diluting equity exposure
+  - Event-driven opportunities when spot equity position is capped by risk limits
 - **Position sizing**: Cap initial single-name weights at 8–10% unless the scoring average is ≥4.5 with no trigger flags; pyramid into winners as KPIs beat thresholds (AI ARR growth >30% YoY, utilization >85%).
 - **Rebalance cadence**: Monthly light-touch checks for trigger flags; full rebalance post-earnings. Harvest gains when a position exceeds 1.5× its target weight or when score momentum turns negative for two consecutive reviews.
 - **Risk controls**: Use stop-loss alerts tied to thesis breakpoints (regulatory denial, capex reversals) rather than price-only triggers; be prepared to rotate proceeds within the same segment to maintain desired exposure.
