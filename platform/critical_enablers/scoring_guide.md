@@ -9,6 +9,7 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 - **Storage Infrastructure:** PSTG
 - **Server/Integration:** SMCI, DELL
 - **Power & Cooling:** VRT, ETN
+- **Energy/Power Generation:** CCJ, CEG, NEE, SMR, OKLO, NNE
 - **Colocation REITs:** EQIX, DLR
 - **Advanced Packaging:** ASX, AMKR
 
@@ -25,6 +26,7 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 - **Memory:** HBM/HBM3E revenue growth, AI datacenter DRAM mix
 - **Server/Integration:** GPU server backlog, AI-specific rack integration revenue
 - **Power/Cooling:** AI datacenter retrofit pipeline, power density upgrades
+- **Energy/Power Generation:** Datacenter power supply contracts, nuclear capacity for AI loads, SMR deployment pipeline
 - **Colo:** AI-ready square footage, hyperscaler co-location commitments
 - **Packaging:** CoWoS/advanced packaging utilization for AI chips
 
@@ -47,11 +49,11 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 - **Packaging:** CoWoS capacity, chiplet integration capabilities
 
 **Scoring guide:**
-- **5:** Clear technology lead, irreplaceable in AI supply chain
-- **4:** Strong differentiation, preferred vendor status
-- **3:** Competitive parity, one of several qualified suppliers
-- **2:** Playing catch-up, losing share
-- **1:** Commoditized, replaceable
+- **5:** Clear technology lead, irreplaceable in AI supply chain; produces scarce proprietary components with pricing power (e.g., HBM, custom ASICs, EUV tools, CoWoS/advanced packaging capacity)
+- **4:** Strong differentiation, preferred vendor status; proprietary technology or capacity constraints create customer dependence
+- **3:** Competitive parity, one of several qualified suppliers; assembles/integrates others' components without proprietary value-add
+- **2:** Playing catch-up, losing share; commoditized assembly where customers can easily switch vendors
+- **1:** Commoditized, replaceable; pure pass-through with no differentiation
 
 ### 3. Strategic Moats (Weight: 1.5)
 **What we're measuring:** Barriers to entry and customer switching costs
@@ -63,11 +65,11 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 - Ecosystem lock-in (e.g., CUDA for networking ASICs)
 
 **Scoring guide:**
-- **5:** Multi-year contracts, irreplaceable capacity or technology
-- **4:** Strong partnerships, high switching costs
-- **3:** Moderate moat, some customer stickiness
-- **2:** Weak moat, customers can switch
-- **1:** Commoditized offering
+- **5:** Multi-year contracts, irreplaceable capacity or technology; controls scarce component supply that customers cannot source elsewhere
+- **4:** Strong partnerships, high switching costs; proprietary designs or IP embedded in customer products
+- **3:** Moderate moat, some customer stickiness; relationships matter but competitors can substitute
+- **2:** Weak moat, customers can switch easily; integrates commodity components that others can assemble
+- **1:** Commoditized offering; hyperscalers have full leverage, can in-source or switch vendors at will
 
 ### 4. Execution & Regulatory Risk (Weight: 1.0)
 **What we're measuring:** Supply chain, customer concentration, and operational risks
@@ -92,15 +94,15 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 **Sample Indicators:**
 - ROIC trend
 - FCF/Capex ratio
-- Gross margin trajectory
+- Gross margin trajectory (expanding = pricing power; flat/declining = commoditization)
 - Balance sheet health (leverage, liquidity)
 
 **Scoring guide:**
-- **5:** ROIC >20%, strong FCF, healthy balance sheet
-- **4:** ROIC 15-20%, positive FCF
-- **3:** ROIC 10-15%, breakeven FCF
-- **2:** ROIC <10%, negative FCF but path visible
-- **1:** Burning cash, balance sheet concerns
+- **5:** ROIC >20%, strong FCF, healthy balance sheet; margins expanding with scale (operating leverage)
+- **4:** ROIC 15-20%, positive FCF; stable margins with pricing power
+- **3:** ROIC 10-15%, breakeven FCF; flat margins, limited operating leverage
+- **2:** ROIC <10%, negative FCF but path visible; margins compressing or structurally capped
+- **1:** Burning cash, balance sheet concerns; no path to margin improvement
 
 ### 6. Valuation as Thesis Discount (Weight: 0.5)
 **What we're measuring:** How much upside remains if AI thesis plays out vs how much is already priced in
@@ -119,52 +121,71 @@ Critical enablers are the infrastructure components that bottleneck AI throughpu
 - **2:** High premium; most optimistic case ~50% priced in
 - **1:** Extreme premium; bubble territory
 
-**Trigger Flags (no score)** | — | Single customer >30% revenue, rapid inventory build, hyperscaler capex cuts, supply allocation shifts
+**Trigger Flags (no score)** | — | Customer concentration >30% (apply only if customer declining, reducing AI capex, or has qualified alternatives — hyperscaler concentration with growing AI demand is a feature), rapid inventory build, hyperscaler capex cuts, supply allocation shifts
 
 ## Watchlist
 
 ### Networking
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| AVGO | Broadcom | Networking ASICs, custom accelerators | 4.27/5 | Customer concentration >50%, Extreme valuation (P/E 81x) |
-| ANET | Arista Networks | 400G/800G AI cluster switching | 4.07/5 | Customer concentration >20% (Meta/MSFT) |
+| AVGO | Broadcom | Networking ASICs, custom accelerators | 4.47/5 | Customer concentration >50% (mitigated by VMware) |
+| ANET | Arista Networks | 400G/800G AI cluster switching | 4.20/5 | Customer concentration >20% (Meta/MSFT) |
+| MRVL | Marvell Technology | Custom AI accelerators, DPUs, 800G PAM4 | 3.93/5 | None |
+| CRDO | Credo Technology | High-speed SerDes, AECs for AI clusters | 3.80/5 | Extreme valuation (P/E 117x, P/S 31x) |
+| FN | Fabrinet | Optical module manufacturing for AI clusters | 3.40/5 | None |
 | NVDA | NVIDIA | Mellanox InfiniBand, ConnectX DPUs (see compute_stack) | See compute_stack | See compute_stack |
 
 ### Memory
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
 | MU | Micron Technology | HBM/HBM3E expansion (see compute_stack) | 4.20/5 | None |
+| RMBS | Rambus | Memory interface IP (DDR5/HBM), licensing model | 3.80/5 | None |
 | 000660.KS | SK Hynix | HBM memory supply leadership | Not scored | Non-US listing |
 | SSNLF | Samsung Electronics | HBM competitor, diversification | Not scored | Non-US listing |
 
 ### Storage Infrastructure
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| PSTG | Pure Storage | FlashBlade for AI datasets, AIRI stack | 3.77/5 | None |
+| PSTG | Pure Storage | FlashBlade for AI datasets, AIRI stack | 3.53/5 | Low margins (3.7% net) |
 
 ### Server & Integration
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| SMCI | Super Micro Computer | GPU server integration velocity | 3.20/5 | Margin compression (11%), Earnings decline |
-| DELL | Dell Technologies | AI server infrastructure, liquid cooling | 4.27/5 | None |
+| DELL | Dell Technologies | AI server infrastructure, liquid cooling | 3.87/5 | None |
+| CLS | Celestica | Hyperscale datacenter hardware (AI server ODM) | 3.60/5 | Hyperscaler capex cycle risk |
+| SMCI | Super Micro Computer | GPU server integration velocity | 2.87/5 | Margin compression (9-10%), Revenue/earnings decline, Accounting issues |
 
 ### Power & Cooling
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| VRT | Vertiv | AI datacenter power/cooling retrofits | 3.87/5 | None |
-| ETN | Eaton | Power distribution, electrical infrastructure | 3.73/5 | None |
+| VRT | Vertiv | AI datacenter power/cooling retrofits | 3.93/5 | None |
+| ETN | Eaton | Power distribution, electrical infrastructure | 3.80/5 | None |
+
+### Energy/Power Generation
+*Updated 2026-01-05*
+
+| Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
+|--------|------|--------------|--------------|---------------|
+| CEG | Constellation Energy | Nuclear generation, datacenter power contracts | 4.00/5 | Three Mile Island restart risk, Microsoft deal dependence |
+| NEE | NextEra Energy | Renewable + grid-scale power for AI infrastructure | 3.60/5 | Hurricane exposure, Renewable tax credit risk |
+| BWXT | BWX Technologies | Nuclear components for reactors (indirect AI exposure) | 3.33/5 | Customer concentration >50% (US Navy), SMR commercialization delays |
+| CCJ | Cameco | Uranium supply for nuclear datacenter power | 3.00/5 | Indirect AI exposure, Extreme valuation (P/E 358x) |
+| BE | Bloom Energy | Solid oxide fuel cells for datacenter power | 2.47/5 | Extreme valuation (P/E 1512x), Negative operating income, High leverage (D/E 2.3x) |
+| SMR | NuScale Power | Small modular reactors for datacenter deployment | 2.40/5 | Pre-revenue, Cash burn, UAMPS project canceled |
+| NNE | Nano Nuclear Energy | Portable micro nuclear for edge datacenters | 1.53/5 | Zero revenue, No NRC application, Speculation ($1.15B on $0 revenue) |
+| OKLO | Oklo Inc | Advanced micro-reactors for distributed power | 1.47/5 | Zero revenue, NRC rejection (2022), Bubble valuation ($11.5B on $0 revenue) |
 
 ### Colocation REITs
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| EQIX | Equinix | Interconnection colo AI exposure | 3.70/5 | Negative FCF |
-| DLR | Digital Realty | AI-ready colo footprint, JV capital | 4.13/5 | None |
+| EQIX | Equinix | Interconnection colo AI exposure | 3.67/5 | Negative FCF |
+| DLR | Digital Realty | AI-ready colo footprint, JV capital | 4.20/5 | None |
 
 ### Advanced Packaging
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| ASX | ASE Technology | CoWoS/advanced packaging throughput | 4.00/5 | Data quality issues (verify Taiwan pricing) |
-| AMKR | Amkor Technology | US packaging alternative, geopolitical hedge | 3.93/5 | None |
+| ASX | ASE Technology | CoWoS/advanced packaging throughput | 4.00/5 | Data quality (EV/EBITDA anomaly), Taiwan risk |
+| AMKR | Amkor Technology | US packaging alternative, geopolitical hedge | 4.20/5 | None |
 
 ## Usage Notes
 - Monitor hyperscaler capex commentary for leading indicators (capacity additions, AI infrastructure spend)

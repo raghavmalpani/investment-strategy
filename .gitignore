@@ -13,3 +13,4 @@ platform/actual_positions.md
 platform/transaction_history.csv
 **/actual_*.md
 **/transactions_*.csv
+.claude/settings.local.json

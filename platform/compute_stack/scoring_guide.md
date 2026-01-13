@@ -107,33 +107,36 @@
 - **2:** High premium; most optimistic case ~50% priced in, limited margin for error (expensive but not unjustified)
 - **1:** Extreme premium; requires flawless execution + TAM expansion beyond bull case (bubble territory)
 
-**Trigger Flags (no score)** | — | Sudden capex pullback, geopolitical sanctions, large customer churn, margin collapse >500bps
+**Trigger Flags (no score)** | — | Sudden capex pullback, geopolitical sanctions, large customer churn, margin collapse >500bps, customer concentration >30% (apply only if customer declining or has qualified alternatives — hyperscaler concentration with growing AI demand is a feature)
 
 ## Watchlist
 
 ### GPU/AI Chip Makers
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| NVDA | NVIDIA | GPU leadership, CUDA ecosystem | **4.60/5** | Export controls, Thesis 60% priced |
-| QCOM | Qualcomm | Edge/cloud AI chip expansion, Snapdragon X2 | **3.87/5** | Smartphone headwinds, Cloud pivot risk |
-| AMD | Advanced Micro Devices | MI300 ramp, hyperscaler design wins | **3.00/5** | Inventory charge, Margins, Overvalued |
-| INTC | Intel | Gaudi AI acceleration, US foundry scaling | **2.33/5** | Negative profitability, 18A execution risk |
+| NVDA | NVIDIA | GPU leadership, CUDA ecosystem | **4.60/5** | Export controls, Thesis 60-65% priced |
+| QCOM | Qualcomm | Edge/cloud AI chip expansion, Snapdragon X2 | **3.60/5** | Smartphone headwinds, Cloud pivot risk, Growth deceleration |
+| ALAB | Astera Labs | PCIe/CXL connectivity for AI servers | **3.53/5** | Elevated valuation (P/E 150x), Customer concentration, Growth deceleration |
+| AMD | Advanced Micro Devices | MI300 ramp, hyperscaler design wins | **2.93/5** | Elevated valuation (P/E 110x), Growth deceleration (8.2%) |
+| INTC | Intel | Gaudi AI acceleration, US foundry scaling | **2.07/5** | Near-zero profitability, 18A execution risk, Negative FCF |
 
 ### Foundry & Tools
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| TSM | Taiwan Semiconductor | Leading-edge foundry supply | **4.73/5** | Taiwan geopolitics, Export controls |
-| ASML | ASML Holding | EUV monopoly enabling node transitions | **4.60/5** | Export controls, Macro capex risk |
+| TSM | Taiwan Semiconductor | Leading-edge foundry supply | **4.53/5** | Taiwan geopolitics, Export controls, Valuation premium |
+| ASML | ASML Holding | EUV monopoly enabling node transitions | **4.33/5** | Export controls, Macro capex risk |
 | MU | Micron | HBM/DRAM scale, AI datacenter memory | **4.40/5** | DRAM cyclicality, China dispute |
+| ENTG | Entegris | Semiconductor materials for advanced nodes | **3.33/5** | None |
 
 ### Cloud Hyperscalers
 | Ticker | Name | Primary Hook | Latest Score | Trigger Flags |
 |--------|------|--------------|--------------|---------------|
-| MSFT | Microsoft (Azure) | Azure AI demand, Copilot pull-through | **4.27/5** | Capacity constraints, Regulatory probes |
-| GOOG | Alphabet (Google Cloud) | Vertex AI adoption, TPU pipeline | **4.13/5** | Regulatory scrutiny, Heavy AI capex |
-| AMZN | Amazon (AWS) | Trainium/Inferentia adoption, Bedrock growth | **3.73/5** | Capex/FCF drag, Platform competition |
-| META | Meta Platforms | Custom silicon + Llama model flywheel | **3.67/5** | Security CVE, Open-source governance |
-| ORCL | Oracle | OCI AI infrastructure, Nvidia partnership | **2.93/5** | Negative FCF growth, High debt (4.4x D/E) |
+| MSFT | Microsoft (Azure) | Azure AI demand, Copilot pull-through | **4.33/5** | Capacity constraints, Regulatory probes |
+| GOOG | Alphabet (Google Cloud) | Vertex AI adoption, TPU pipeline | **4.20/5** | Regulatory scrutiny, Heavy AI capex |
+| META | Meta Platforms | Custom silicon + Llama model flywheel | **4.20/5** | Security concerns, Open-source governance |
+| AMZN | Amazon (AWS) | Trainium/Inferentia adoption, Bedrock growth | **3.80/5** | Capex/FCF drag, Platform competition |
+| CRWV | CoreWeave | GPU-specialized cloud for AI workloads | **3.13/5** | Extreme leverage (D/E 4.85x), Liquidity risk, Hyperscaler competition |
+| ORCL | Oracle | OCI AI infrastructure, Nvidia partnership | **3.20/5** | Negative FCF growth, High debt (4.15x D/E) |
 
 ## Usage Notes
 - Update scores post-earnings using KPI trends from the data collection playbook.

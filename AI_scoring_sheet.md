@@ -18,15 +18,28 @@
 
 ### Platform (Infrastructure & Enablers)
 - `platform/compute_stack/scoring_guide.md` - Chips, foundries, cloud compute
-- `platform/critical_enablers.md` - Networking, memory, power, packaging
+  - NVDA, AMD, INTC, QCOM, TSM, ASML, MU, MSFT, AMZN, GOOG, META, ORCL
+- `platform/critical_enablers/scoring_guide.md` - Networking, memory, power, packaging
+  - AVGO, ANET, MU, SK Hynix, Samsung, PSTG, SMCI, DELL, VRT, ETN, EQIX, DLR, ASX, AMKR
 
 ### Product (AI Distribution & Applications)
-- `product/endpoint_gatekeepers.md` - Device OS, automotive, industrial platforms
+
+**Platform independence is a key cross-cutting vector** - companies that control their own distribution (OS, hardware, dominant apps) score higher on strategic moats than those dependent on iOS/Android/web.
+
+- `product/hardware_and_os_gatekeepers/scoring_guide.md` - Hardware + OS control (devices, operating systems)
+  - AAPL, GOOGL, MSFT, META, SSNLF
 - `product/productivity_devops.md` - Office, dev tools, enterprise SaaS
+  - MSFT, TEAM, NOW
 - `product/commerce_ads.md` - E-commerce, advertising platforms
-- `product/industrial_logistics.md` - Automation, warehouse, supply chain
-- `product/healthcare_regulated.md` - Medical AI, diagnostics, compliance
+  - AMZN, SHOP, MELI, GOOGL, META
 - `product/consumer_social_media.md` - Social, media, personalization
+  - META, SNAP, RDDT, NFLX, SPOT, RBLX, PINS
+- `product/automotive_autonomy.md` - Autonomous driving, software-defined vehicles
+  - TSLA, GM, F, RIVN, MBLY
+- `product/industrial_logistics.md` - Automation, warehouse, supply chain
+  - SIEGY, Schneider, John Deere, ABB
+- `product/healthcare_regulated.md` - Medical AI, diagnostics, compliance
+  - Intuitive Surgical, Teladoc, diagnostics providers
 
 ## Implementation Notes
 - **Weight adjustment:** Total weights are 7.5 for growth-focused framework (not 6.0). Adjust by ±0.5 to reflect unique company attributes while maintaining comparability.

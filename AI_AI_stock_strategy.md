@@ -14,14 +14,16 @@
   - *Critical Enablers*: Networking (Arista, Broadcom), memory (Samsung, SK Hynix, Micron), advanced packaging (ASE, Amkor), power/cooling (Vertiv, Eaton), colo REITs (Equinix, Digital Realty) — track backlog, pricing, and infrastructure bottlenecks that govern AI throughput.
   - *Model & Talent Overlay*: OpenAI, Anthropic, Google DeepMind, Cohere — treat frontier model capability as a moat overlay topping other holdings rather than a standalone sleeve; monitor release cadence and strategic partnerships that influence both infra and product names.
 - **AI Distribution & Product**
-  - *Endpoint Gatekeepers*: Apple, Alphabet (Android), automotive OEMs (Tesla, GM), industrial platforms (Siemens, Schneider) — watch for native agent/voice integration, OS-level APIs, and regulatory scrutiny around ecosystem control.
-  - *Vertical AI Leaders*: Break out by use-case adoption curves
-    - Productivity & DevOps (Microsoft Copilot, Atlassian, ServiceNow)
-    - Commerce & Ads (Amazon, Shopify, MercadoLibre, advertising platforms)
-    - Industrial & Logistics Automation (John Deere, ABB, autonomous warehouse providers)
-    - Healthcare & Regulated Services (Intuitive Surgical, Teladoc, diagnostics AI)
-    - Consumer Social & Media (Snap, Reddit, Netflix) when AI enhances personalization and engagement.
-    Evaluate each for measurable AI-derived revenue, data rights, and compliance posture before scaling exposure.
+  - Product segments are organized by vertical use case, with **platform independence** as a key cross-cutting vector. Companies that control their own distribution (OS, hardware, dominant apps) score higher on strategic moats than those dependent on iOS/Android/web for user access.
+  - *Hardware/Endpoint Gatekeepers*: Apple, Alphabet (Android), Microsoft (Windows/Surface), Meta (Quest/Ray-Ban) — devices + OS control provide optionality to tax AI agent interactions if UI paradigms shift (voice-first, AR overlays, agent-first)
+  - *Productivity & DevOps*: Microsoft (Office 365, Copilot), Atlassian, ServiceNow, DataDog,  — AI-enhanced workflows, seat expansion, developer productivity gains
+  - *Commerce & Ads*: Amazon, Shopify, MercadoLibre, Google/Meta advertising platforms — conversational commerce, AI targeting, fulfillment automation
+  - *Social Media & Consumer*: Meta (Instagram, WhatsApp), Snap, Reddit, Netflix, Spotify, Roblox, Pinterest — engagement AI, personalization, content recommendation
+  - *Automotive & Autonomy*: Tesla (FSD), GM (Cruise), Ford (BlueCruise), Rivian, Mobileye, Waymo — autonomous driving, software-defined vehicles, fleet data moats
+  - *Industrial & Logistics*: Siemens (Xcelerator), Schneider Electric, John Deere, ABB, warehouse automation providers — process automation, predictive maintenance, safety AI
+  - *Healthcare & Regulated*: Intuitive Surgical, Teladoc, diagnostics AI providers — clinical decision support, FDA approval pathways, reimbursement models
+
+  Evaluate each for measurable AI-derived revenue, platform independence, data rights, and compliance posture before scaling exposure.
 
 ## Risk/Reward Positioning
 - **Compute stack**: Demand visibility is strong but cyclical; monitor export controls, node transitions, and hyperscaler ROI to avoid overpaying for peak earnings.
